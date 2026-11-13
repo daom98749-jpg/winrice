@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  "default_workspace_padding": 10,
+  "default_container_padding": 10,
+  "border": true,
+  "border_width": 3,
+  "border_offset": -1,
+  "border_colours": { "single": "#89b4fa", "stack": "#a6e3a1", "monocle": "#f38ba8" },
+  "stackbar": { "height": 20, "mode": "OnStack" },
+  "monitors": [
+    { "workspaces": [
+      { "name": "1", "layout": "BSP" },
+      { "name": "2", "layout": "BSP" },
+      { "name": "3", "layout": "BSP" },
+      { "name": "4", "layout": "BSP" }
+    ] }
+  ]
+}

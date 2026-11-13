@@ -1,0 +1,22 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13px;
+  color: #cdd6f4;
+}
+.yasb-bar {
+  background-color: rgba(30, 30, 46, 0.85);
+  border-radius: 12px;
+}
+.widget {
+  padding: 0 10px;
+}
+.clock-widget { color: #89b4fa; font-weight: bold; }
+.cpu-widget { color: #f9e2af; }
+.memory-widget { color: #a6e3a1; }
+.battery-widget { color: #f5c2e7; }
+.komorebi-workspaces .ws-btn {
+  padding: 0 8px;
+  color: #6c7086;
+}
+.komorebi-workspaces .ws-btn.populated { color: #cdd6f4; }
+.komorebi-workspaces .ws-btn.active { color: #89b4fa; font-weight: bold; }

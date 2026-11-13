@@ -1,0 +1,69 @@
+watch_stylesheet: true
+watch_config: true
+debug: false
+komorebi:
+  start_command: "komorebic start --whkd"
+  stop_command: "komorebic stop --whkd"
+  reload_command: "komorebic stop --whkd && komorebic start --whkd"
+bars:
+  primary-bar:
+    enabled: true
+    screens: ["*"]
+    class_name: "yasb-bar"
+    alignment:
+      position: "top"
+      center: false
+    blur_effect:
+      enabled: true
+      acrylic: false
+      dark_mode: true
+      round_corners: false
+      border_color: System
+    window_flags:
+      always_on_top: false
+      windows_app_bar: true
+    dimensions:
+      width: "100%"
+      height: 32
+    padding:
+      top: 6
+      left: 6
+      bottom: 0
+      right: 6
+    widgets:
+      left: ["workspaces"]
+      center: ["clock"]
+      right: ["cpu", "memory", "battery"]
+widgets:
+  workspaces:
+    type: "komorebi.workspaces.WorkspaceWidget"
+    options:
+      label_offline: "Offline"
+      label_workspace_btn: "{index}"
+      label_default_name: ""
+      label_zero_index: false
+      hide_empty_workspaces: false
+  clock:
+    type: "yasb.clock.ClockWidget"
+    options:
+      label: "{%a %d %b  %H:%M}"
+      label_alt: "{%A, %d %B %Y  %H:%M:%S}"
+      update_interval: 1000
+  cpu:
+    type: "yasb.cpu.CpuWidget"
+    options:
+      label: "CPU {info[percent][total]}%"
+      label_alt: "CPU {info[freq][current]:.0f} MHz"
+      update_interval: 2000
+  memory:
+    type: "yasb.memory.MemoryWidget"
+    options:
+      label: "RAM {virtual_mem_percent}%"
+      label_alt: "RAM {virtual_mem_free} free"
+      update_interval: 5000
+  battery:
+    type: "yasb.battery.BatteryWidget"
+    options:
+      label: "BAT {percent}%"
+      label_alt: "BAT {time_remaining}"
+      update_interval: 5000

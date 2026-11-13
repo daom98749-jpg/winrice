@@ -1,0 +1,13 @@
+{
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', Consolas, monospace",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.smoothScrolling": true,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "window.titleBarStyle": "custom",
+  "files.autoSave": "afterDelay"
+}
